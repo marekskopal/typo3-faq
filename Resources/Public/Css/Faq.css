@@ -36,3 +36,8 @@
 .msfaq__answers {
     padding: 0 16px 16px;
 }
+
+.msfaq__perex {
+    margin: 0 0 12px;
+    font-style: italic;
+}

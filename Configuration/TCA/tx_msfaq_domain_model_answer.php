@@ -9,6 +9,7 @@ return [
     'ctrl' => [
         'title' => $llPath . ':' . $table,
         'label' => 'content',
+        'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'delete' => 'deleted',

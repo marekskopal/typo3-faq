@@ -1,7 +1,11 @@
 <f:layout name="Default" />
 
 <f:section name="Main">
-    <f:for each="{questions}" as="question">
-        <f:render partial="Question/Item" arguments="{question: question}" />
-    </f:for>
+    <f:if condition="{questions}">
+        <f:then>
+            <f:for each="{questions}" as="question">
+                <f:render partial="Question/Item" arguments="{question: question}" />
+            </f:for>
+        </f:then>
+    </f:if>
 </f:section>

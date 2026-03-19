@@ -1,6 +1,9 @@
 <details class="msfaq__item">
     <summary class="msfaq__question">{question.title}</summary>
     <div class="msfaq__answers">
+        <f:if condition="{question.perex}">
+            <p class="msfaq__perex">{question.perex}</p>
+        </f:if>
         <f:for each="{question.answers}" as="answer">
             <f:format.html>{answer.content}</f:format.html>
         </f:for>
