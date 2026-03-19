@@ -1,0 +1,8 @@
+<details class="msfaq__item">
+    <summary class="msfaq__question">{question.title}</summary>
+    <div class="msfaq__answers">
+        <f:for each="{question.answers}" as="answer">
+            <f:format.html>{answer.content}</f:format.html>
+        </f:for>
+    </div>
+</details>

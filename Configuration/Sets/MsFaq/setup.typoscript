@@ -1,0 +1,20 @@
+plugin.tx_msfaq_faq {
+    view {
+        templateRootPaths {
+            0 = EXT:ms_faq/Resources/Private/Templates/
+            1 = {$plugin.tx_msfaq_faq.view.templateRootPath}
+        }
+
+        partialRootPaths {
+            0 = EXT:ms_faq/Resources/Private/Partials/
+            1 = {$plugin.tx_msfaq_faq.view.partialRootPath}
+        }
+
+        layoutRootPaths {
+            0 = EXT:ms_faq/Resources/Private/Layouts/
+            1 = {$plugin.tx_msfaq_faq.view.layoutRootPath}
+        }
+    }
+}
+
+page.includeCSS.msfaq = EXT:ms_faq/Resources/Public/Css/Faq.css

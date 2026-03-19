@@ -1,0 +1,38 @@
+.msfaq-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.msfaq__item {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.msfaq__item[open] {
+    border-color: #999;
+}
+
+.msfaq__question {
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.msfaq__question::-webkit-details-marker {
+    display: none;
+}
+
+.msfaq__question::after {
+    content: '+';
+    float: right;
+}
+
+.msfaq__item[open] .msfaq__question::after {
+    content: '−';
+}
+
+.msfaq__answers {
+    padding: 0 16px 16px;
+}
