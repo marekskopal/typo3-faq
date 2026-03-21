@@ -52,6 +52,21 @@ return [
                 'eval' => 'trim',
             ],
         ],
+        'categories' => [
+            'config' => [
+                'type' => 'category',
+            ],
+        ],
+        'always_open' => [
+            'label' => $llPath . ':' . $table . '.always_open',
+            'config' => [
+                'type' => 'check',
+                'renderType' => 'checkboxToggle',
+                'items' => [
+                    ['label' => ''],
+                ],
+            ],
+        ],
         'answers' => [
             'label' => $llPath . ':' . $table . '.answers',
             'config' => [
@@ -69,7 +84,9 @@ return [
         '0' => [
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                    title, perex, answers,
+                    title, perex, always_open, answers,
+                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
+                    categories,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
                     sys_language_uid, l10n_parent, l10n_diffsource,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,

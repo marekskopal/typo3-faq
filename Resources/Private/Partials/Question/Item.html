@@ -1,4 +1,4 @@
-<details class="msfaq__item">
+<details class="msfaq__item" {f:if(condition: question.alwaysOpen, then: 'open')}>
     <summary class="msfaq__question">{question.title}</summary>
     <div class="msfaq__answers">
         <f:if condition="{question.perex}">

@@ -2,6 +2,9 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file source-language="en" datatype="plaintext" original="EXT:ms_faq/Resources/Private/Language/locallang_db.xlf">
         <body>
+            <trans-unit id="plugin.faq.empty">
+                <source>No questions found.</source>
+            </trans-unit>
             <trans-unit id="tx_msfaq_domain_model_question">
                 <source>Question</source>
             </trans-unit>
@@ -10,6 +13,9 @@
             </trans-unit>
             <trans-unit id="tx_msfaq_domain_model_question.perex">
                 <source>Perex</source>
+            </trans-unit>
+            <trans-unit id="tx_msfaq_domain_model_question.always_open">
+                <source>Always Open</source>
             </trans-unit>
             <trans-unit id="tx_msfaq_domain_model_question.answers">
                 <source>Answers</source>
