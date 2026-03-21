@@ -7,7 +7,6 @@ namespace MarekSkopal\MsFaq\Controller;
 use MarekSkopal\MsFaq\Domain\Model\Question;
 use MarekSkopal\MsFaq\Domain\Repository\QuestionRepository;
 use Psr\Http\Message\ResponseInterface;
-use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
 use const JSON_HEX_TAG;
 use const JSON_PRETTY_PRINT;
@@ -22,7 +21,17 @@ class FaqController extends ActionController
 
     public function listAction(): ResponseInterface
     {
-        $questions = $this->questionRepository->findAllOrdered();
+        /**
+         * @var array{
+         *     showOnlyTop?: int,
+         *  } $settings
+         */
+        $settings = $this->settings;
+
+        $showOnlyTop = (bool) ($settings['showOnlyTop'] ?? 0);
+        $questions = $showOnlyTop
+            ? $this->questionRepository->findAllOrderedTopOnly()
+            : $this->questionRepository->findAllOrdered();
         $this->view->assign('questions', $questions);
         $this->view->assign('jsonLd', $this->buildJsonLd($questions));
 

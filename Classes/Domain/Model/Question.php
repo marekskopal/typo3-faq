@@ -19,6 +19,8 @@ class Question extends AbstractEntity
 
     protected bool $alwaysOpen = false;
 
+    protected bool $top = false;
+
     /** @var ObjectStorage<Answer> */
     protected ObjectStorage $answers;
 
@@ -55,6 +57,11 @@ class Question extends AbstractEntity
     public function isAlwaysOpen(): bool
     {
         return $this->alwaysOpen;
+    }
+
+    public function isTop(): bool
+    {
+        return $this->top;
     }
 
     /** @return ObjectStorage<Answer> */

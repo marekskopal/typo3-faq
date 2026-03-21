@@ -8,10 +8,10 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 defined('TYPO3') or die;
 
 $pluginSignature = ExtensionUtility::registerPlugin('MsFaq', 'Faq', 'FAQ');
-
+ExtensionManagementUtility::addPiFlexFormValue('*', 'FILE:EXT:ms_reference/Configuration/FlexForms/Flexform.xml', $pluginSignature);
 ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content',
-    '--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.plugin, pages, recursive',
+    '--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.plugin, pi_flexform, pages, recursive',
     $pluginSignature,
     'after:palette:headers',
 );

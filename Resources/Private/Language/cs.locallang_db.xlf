@@ -1,39 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="cs" datatype="plaintext" original="EXT:ms_faq/Resources/Private/Language/locallang_db.xlf">
-        <body>
-            <trans-unit id="plugin.faq.empty">
-                <source>No questions found.</source>
-                <target>Nebyly nalezeny žádné otázky.</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_question">
-                <source>Question</source>
-                <target>Otázka</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_question.title">
-                <source>Title</source>
-                <target>Název</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_question.perex">
-                <source>Perex</source>
-                <target>Perex</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_question.always_open">
-                <source>Always Open</source>
-                <target>Vždy otevřeno</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_question.answers">
-                <source>Answers</source>
-                <target>Odpovědi</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_answer">
-                <source>Answer</source>
-                <target>Odpověď</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_answer.content">
-                <source>Content</source>
-                <target>Obsah</target>
-            </trans-unit>
-        </body>
-    </file>
+	<file source-language="en" target-language="cs" datatype="plaintext" original="EXT:ms_faq/Resources/Private/Language/locallang_db.xlf">
+		<body>
+			<trans-unit id="plugin.faq.empty">
+				<source>No questions found.</source>
+				<target>Nebyly nalezeny žádné otázky.</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_question">
+				<source>Question</source>
+				<target>Otázka</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_question.title">
+				<source>Title</source>
+				<target>Název</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_question.perex">
+				<source>Perex</source>
+				<target>Perex</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_question.always_open">
+				<source>Always Open</source>
+				<target>Vždy otevřeno</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_question.top">
+				<source>Top</source>
+				<target>Top</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_question.answers">
+				<source>Answers</source>
+				<target>Odpovědi</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_answer">
+				<source>Answer</source>
+				<target>Odpověď</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_answer.content">
+				<source>Content</source>
+				<target>Obsah</target>
+			</trans-unit>
+			<trans-unit id="flexform.sheet_general">
+				<source>General</source>
+				<target>Obecné</target>
+			</trans-unit>
+			<trans-unit id="flexform.show_only_top">
+				<source>Show only top questions</source>
+				<target>Zobrazit pouze top otázky</target>
+			</trans-unit>
+			<trans-unit id="flexform.template_layout">
+				<source>Template layout</source>
+				<target>Rozvržení šablony</target>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

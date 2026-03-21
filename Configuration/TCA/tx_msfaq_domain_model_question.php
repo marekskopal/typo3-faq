@@ -67,6 +67,16 @@ return [
                 ],
             ],
         ],
+        'top' => [
+            'label' => $llPath . ':' . $table . '.top',
+            'config' => [
+                'type' => 'check',
+                'renderType' => 'checkboxToggle',
+                'items' => [
+                    ['label' => ''],
+                ],
+            ],
+        ],
         'answers' => [
             'label' => $llPath . ':' . $table . '.answers',
             'config' => [
@@ -84,7 +94,7 @@ return [
         '0' => [
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                    title, perex, always_open, answers,
+                    title, perex, always_open, top, answers,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
                     categories,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,

@@ -2,38 +2,54 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file source-language="en" target-language="de" datatype="plaintext" original="EXT:ms_faq/Resources/Private/Language/locallang_db.xlf">
         <body>
-            <trans-unit id="plugin.faq.empty">
-                <source>No questions found.</source>
-                <target>Keine Fragen gefunden.</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_question">
-                <source>Question</source>
-                <target>Frage</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_question.title">
-                <source>Title</source>
-                <target>Titel</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_question.perex">
-                <source>Perex</source>
-                <target>Kurztext</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_question.always_open">
-                <source>Always Open</source>
-                <target>Immer geöffnet</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_question.answers">
-                <source>Answers</source>
-                <target>Antworten</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_answer">
-                <source>Answer</source>
-                <target>Antwort</target>
-            </trans-unit>
-            <trans-unit id="tx_msfaq_domain_model_answer.content">
-                <source>Content</source>
-                <target>Inhalt</target>
-            </trans-unit>
-        </body>
-    </file>
+			<trans-unit id="plugin.faq.empty">
+				<source>No questions found.</source>
+				<target>Keine Fragen gefunden.</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_question">
+				<source>Question</source>
+				<target>Frage</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_question.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_question.perex">
+				<source>Perex</source>
+				<target>Kurztext</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_question.always_open">
+				<source>Always Open</source>
+				<target>Immer geöffnet</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_question.top">
+				<source>Top</source>
+				<target>Top</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_question.answers">
+				<source>Answers</source>
+				<target>Antworten</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_answer">
+				<source>Answer</source>
+				<target>Antwort</target>
+			</trans-unit>
+			<trans-unit id="tx_msfaq_domain_model_answer.content">
+				<source>Content</source>
+				<target>Inhalt</target>
+			</trans-unit>
+			<trans-unit id="flexform.sheet_general">
+				<source>General</source>
+				<target>Allgemein</target>
+			</trans-unit>
+			<trans-unit id="flexform.show_only_top">
+				<source>Show only top questions</source>
+				<target>Nur Top-Fragen anzeigen</target>
+			</trans-unit>
+			<trans-unit id="flexform.template_layout">
+				<source>Template layout</source>
+				<target>Vorlagenlayout</target>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

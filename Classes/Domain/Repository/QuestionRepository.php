@@ -16,6 +16,18 @@ class QuestionRepository extends Repository
     public function findAllOrdered(): QueryResultInterface
     {
         $query = $this->createQuery();
+        $query->setOrderings([
+            'top' => QueryInterface::ORDER_DESCENDING,
+            'sorting' => QueryInterface::ORDER_ASCENDING,
+        ]);
+        return $query->execute();
+    }
+
+    /** @return QueryResultInterface<int, Question> */
+    public function findAllOrderedTopOnly(): QueryResultInterface
+    {
+        $query = $this->createQuery();
+        $query->matching($query->equals('top', true));
         $query->setOrderings(['sorting' => QueryInterface::ORDER_ASCENDING]);
         return $query->execute();
     }
