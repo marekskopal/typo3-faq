@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace MarekSkopal\MsFaq\Controller;
 
+use TYPO3\CMS\Fluid\View\FluidViewAdapter;
 use TYPO3Fluid\Fluid\View\TemplatePaths;
 use TYPO3Fluid\Fluid\View\TemplateView;
 use TYPO3Fluid\Fluid\View\ViewInterface;
@@ -12,7 +13,8 @@ abstract class ActionController extends \TYPO3\CMS\Extbase\Mvc\Controller\Action
 {
     protected function initializeView(ViewInterface $view): void
     {
-        assert($view instanceof TemplateView);
+        /** @phpstan-ignore-next-line instanceof.internalClass */
+        assert($view instanceof TemplateView || $view instanceof FluidViewAdapter);
 
         /**
          * @var array{
@@ -37,7 +39,10 @@ abstract class ActionController extends \TYPO3\CMS\Extbase\Mvc\Controller\Action
             return;
         }
 
-        /** @var TemplatePaths $templatePaths */
+        /**
+         * @var TemplatePaths $templatePaths
+         * @phpstan-ignore-next-line method.internalClass
+         */
         $templatePaths = $view->getRenderingContext()->getTemplatePaths();
 
         if (isset($templateLayout['templateRootPath'])) {
