@@ -16,7 +16,7 @@ return [
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
-        'iconfile' => 'EXT:ms_faq/Resources/Public/Icons/Extension.svg',
+        'iconfile' => 'EXT:ms_faq/Resources/Public/Icons/Answer.svg',
     ],
     'columns' => [
         'hidden' => [

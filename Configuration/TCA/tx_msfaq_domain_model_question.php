@@ -19,7 +19,7 @@ return [
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
-        'iconfile' => 'EXT:ms_faq/Resources/Public/Icons/Extension.svg',
+        'iconfile' => 'EXT:ms_faq/Resources/Public/Icons/Question.svg',
     ],
     'columns' => [
         'hidden' => [
