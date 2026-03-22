@@ -10,5 +10,5 @@ CREATE TABLE tx_msfaq_domain_model_question (
 CREATE TABLE tx_msfaq_domain_model_answer (
     content mediumtext,
     question int(11) DEFAULT '0' NOT NULL,
-    sorting int(11) DEFAULT '0' NOT NULL
+    sorting int(11) DEFAULT '0' NOT NULL,
 );
