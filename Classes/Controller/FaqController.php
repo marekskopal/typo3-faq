@@ -24,14 +24,18 @@ class FaqController extends ActionController
         /**
          * @var array{
          *     showOnlyTop?: int,
+         *     ordering?: string,
          *  } $settings
          */
         $settings = $this->settings;
 
         $showOnlyTop = (bool) ($settings['showOnlyTop'] ?? 0);
-        $questions = $showOnlyTop
-            ? $this->questionRepository->findAllOrderedTopOnly()
-            : $this->questionRepository->findAllOrdered();
+        $questions = $showOnlyTop ? $this->questionRepository->findAllOrderedTopOnly() : match ($settings['ordering'] ?? 'topSorting') {
+                'sorting' => $this->questionRepository->findAllOrderedBySorting(),
+                'uid' => $this->questionRepository->findAllOrderedByUid(),
+                'alphabetically' => $this->questionRepository->findAllOrderedAlphabetically(),
+                default => $this->questionRepository->findAllOrdered(),
+        };
         $this->view->assign('questions', $questions);
         $this->view->assign('jsonLd', $this->buildJsonLd($questions));
 

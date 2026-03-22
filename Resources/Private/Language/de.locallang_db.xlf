@@ -42,6 +42,26 @@
 				<source>Show only top questions</source>
 				<target>Nur Top-Fragen anzeigen</target>
 			</trans-unit>
+			<trans-unit id="flexform.ordering">
+				<source>Question ordering</source>
+				<target>Reihenfolge der Fragen</target>
+			</trans-unit>
+			<trans-unit id="flexform.ordering.top_sorting">
+				<source>By sorting, top on top</source>
+				<target>Nach Sortierung, Top oben</target>
+			</trans-unit>
+			<trans-unit id="flexform.ordering.sorting">
+				<source>By sorting</source>
+				<target>Nach Sortierung</target>
+			</trans-unit>
+			<trans-unit id="flexform.ordering.uid">
+				<source>By UID</source>
+				<target>Nach UID</target>
+			</trans-unit>
+			<trans-unit id="flexform.ordering.alphabetically">
+				<source>Alphabetically</source>
+				<target>Alphabetisch</target>
+			</trans-unit>
 			<trans-unit id="flexform.template_layout">
 				<source>Template layout</source>
 				<target>Vorlagenlayout</target>

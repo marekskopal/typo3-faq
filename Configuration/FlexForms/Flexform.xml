@@ -18,6 +18,31 @@
                             </items>
                         </config>
                     </settings.showOnlyTop>
+                    <settings.ordering>
+                        <label>LLL:EXT:ms_faq/Resources/Private/Language/locallang_db.xlf:flexform.ordering</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items>
+                                <numIndex index="0" type="array">
+                                    <label>LLL:EXT:ms_faq/Resources/Private/Language/locallang_db.xlf:flexform.ordering.top_sorting</label>
+                                    <value>topSorting</value>
+                                </numIndex>
+                                <numIndex index="1" type="array">
+                                    <label>LLL:EXT:ms_faq/Resources/Private/Language/locallang_db.xlf:flexform.ordering.sorting</label>
+                                    <value>sorting</value>
+                                </numIndex>
+                                <numIndex index="2" type="array">
+                                    <label>LLL:EXT:ms_faq/Resources/Private/Language/locallang_db.xlf:flexform.ordering.uid</label>
+                                    <value>uid</value>
+                                </numIndex>
+                                <numIndex index="3" type="array">
+                                    <label>LLL:EXT:ms_faq/Resources/Private/Language/locallang_db.xlf:flexform.ordering.alphabetically</label>
+                                    <value>alphabetically</value>
+                                </numIndex>
+                            </items>
+                        </config>
+                    </settings.ordering>
                     <settings.templateLayout>
                         <label>LLL:EXT:ms_faq/Resources/Private/Language/locallang_db.xlf:flexform.template_layout</label>
                         <config>

@@ -32,6 +32,21 @@
 			<trans-unit id="flexform.show_only_top">
 				<source>Show only top questions</source>
 			</trans-unit>
+			<trans-unit id="flexform.ordering">
+				<source>Question ordering</source>
+			</trans-unit>
+			<trans-unit id="flexform.ordering.top_sorting">
+				<source>By sorting, top on top</source>
+			</trans-unit>
+			<trans-unit id="flexform.ordering.sorting">
+				<source>By sorting</source>
+			</trans-unit>
+			<trans-unit id="flexform.ordering.uid">
+				<source>By UID</source>
+			</trans-unit>
+			<trans-unit id="flexform.ordering.alphabetically">
+				<source>Alphabetically</source>
+			</trans-unit>
 			<trans-unit id="flexform.template_layout">
 				<source>Template layout</source>
 			</trans-unit>

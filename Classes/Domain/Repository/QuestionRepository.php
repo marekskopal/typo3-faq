@@ -24,6 +24,30 @@ class QuestionRepository extends Repository
     }
 
     /** @return QueryResultInterface<int, Question> */
+    public function findAllOrderedBySorting(): QueryResultInterface
+    {
+        $query = $this->createQuery();
+        $query->setOrderings(['sorting' => QueryInterface::ORDER_ASCENDING]);
+        return $query->execute();
+    }
+
+    /** @return QueryResultInterface<int, Question> */
+    public function findAllOrderedByUid(): QueryResultInterface
+    {
+        $query = $this->createQuery();
+        $query->setOrderings(['uid' => QueryInterface::ORDER_ASCENDING]);
+        return $query->execute();
+    }
+
+    /** @return QueryResultInterface<int, Question> */
+    public function findAllOrderedAlphabetically(): QueryResultInterface
+    {
+        $query = $this->createQuery();
+        $query->setOrderings(['title' => QueryInterface::ORDER_ASCENDING]);
+        return $query->execute();
+    }
+
+    /** @return QueryResultInterface<int, Question> */
     public function findAllOrderedTopOnly(): QueryResultInterface
     {
         $query = $this->createQuery();

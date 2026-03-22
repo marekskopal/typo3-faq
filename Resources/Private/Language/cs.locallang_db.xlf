@@ -42,6 +42,26 @@
 				<source>Show only top questions</source>
 				<target>Zobrazit pouze top otázky</target>
 			</trans-unit>
+			<trans-unit id="flexform.ordering">
+				<source>Question ordering</source>
+				<target>Řazení otázek</target>
+			</trans-unit>
+			<trans-unit id="flexform.ordering.top_sorting">
+				<source>By sorting, top on top</source>
+				<target>Dle pořadí, top nahoře</target>
+			</trans-unit>
+			<trans-unit id="flexform.ordering.sorting">
+				<source>By sorting</source>
+				<target>Dle pořadí</target>
+			</trans-unit>
+			<trans-unit id="flexform.ordering.uid">
+				<source>By UID</source>
+				<target>Dle UID</target>
+			</trans-unit>
+			<trans-unit id="flexform.ordering.alphabetically">
+				<source>Alphabetically</source>
+				<target>Abecedně</target>
+			</trans-unit>
 			<trans-unit id="flexform.template_layout">
 				<source>Template layout</source>
 				<target>Rozvržení šablony</target>
