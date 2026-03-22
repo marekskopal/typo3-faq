@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="de" datatype="plaintext" original="EXT:ms_faq/Resources/Private/Language/locallang_db.xlf">
-        <body>
-			<trans-unit id="plugin.faq.empty">
-				<source>No questions found.</source>
-				<target>Keine Fragen gefunden.</target>
-			</trans-unit>
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:ms_faq/Resources/Private/Language/locallang_db.xlf">
+		<body>
 			<trans-unit id="tx_msfaq_domain_model_question">
 				<source>Question</source>
 				<target>Frage</target>
