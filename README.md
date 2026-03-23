@@ -16,6 +16,10 @@ FAQ accordion as a content element in TYPO3. Questions with inline answers are m
 - Multilingual support (EN, CS, DE labels out of the box)
 - Customizable templates and styling
 
+## Examples
+
+- [www.fingather.com/faq](https://www.fingather.com/faq)
+
 ## Requirements
 
 - PHP 8.3+
