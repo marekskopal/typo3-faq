@@ -5,10 +5,13 @@ CREATE TABLE tx_msfaq_domain_model_question (
     answers int(11) DEFAULT '0' NOT NULL,
     always_open tinyint(1) DEFAULT '0' NOT NULL,
     top tinyint(1) DEFAULT '0' NOT NULL,
-    sorting int(11) DEFAULT '0' NOT NULL
+    sorting int(11) DEFAULT '0' NOT NULL,
+    KEY sorting (sorting),
+    KEY top (top)
 );
 CREATE TABLE tx_msfaq_domain_model_answer (
     content mediumtext,
     question int(11) DEFAULT '0' NOT NULL,
     sorting int(11) DEFAULT '0' NOT NULL,
+    KEY sorting (sorting)
 );

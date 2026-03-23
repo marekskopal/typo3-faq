@@ -37,6 +37,11 @@
             "MarekSkopal\\MsFaq\\": "Classes/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "MarekSkopal\\MsFaq\\Tests\\": "Tests/"
+        }
+    },
     "extra": {
         "typo3/cms": {
             "extension-key": "ms_faq"

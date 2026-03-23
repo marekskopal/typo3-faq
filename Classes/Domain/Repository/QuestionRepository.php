@@ -55,4 +55,22 @@ class QuestionRepository extends Repository
         $query->setOrderings(['sorting' => QueryInterface::ORDER_ASCENDING]);
         return $query->execute();
     }
+
+    /** @return QueryResultInterface<int, Question> */
+    public function findAllOrderedTopOnlyByUid(): QueryResultInterface
+    {
+        $query = $this->createQuery();
+        $query->matching($query->equals('top', true));
+        $query->setOrderings(['uid' => QueryInterface::ORDER_ASCENDING]);
+        return $query->execute();
+    }
+
+    /** @return QueryResultInterface<int, Question> */
+    public function findAllOrderedTopOnlyAlphabetically(): QueryResultInterface
+    {
+        $query = $this->createQuery();
+        $query->matching($query->equals('top', true));
+        $query->setOrderings(['title' => QueryInterface::ORDER_ASCENDING]);
+        return $query->execute();
+    }
 }

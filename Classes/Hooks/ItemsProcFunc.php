@@ -58,14 +58,7 @@ class ItemsProcFunc
     /** @return array<string, string> */
     private function getTemplateLayoutsFromTsConfig(int $pageUid): array
     {
-        /**
-         * @var array{
-         *     "tx_msfaq."?: array{
-         *          "templateLayouts."?: array<string, string>
-         *      }
-         * }
-         * $pagesTsConfig
-         */
+        /** @var array{"tx_msfaq."?: array{"templateLayouts."?: array<string, string>}} $pagesTsConfig */
         $pagesTsConfig = BackendUtility::getPagesTSconfig($pageUid);
 
         return $pagesTsConfig['tx_msfaq.']['templateLayouts.'] ?? [];

@@ -1,0 +1,7 @@
+plugin.tx_msfaq_faq {
+    view {
+        templateRootPath =
+        partialRootPath =
+        layoutRootPath =
+    }
+}

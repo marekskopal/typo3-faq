@@ -30,11 +30,15 @@ class FaqController extends ActionController
         $settings = $this->settings;
 
         $showOnlyTop = (bool) ($settings['showOnlyTop'] ?? 0);
-        $questions = $showOnlyTop ? $this->questionRepository->findAllOrderedTopOnly() : match ($settings['ordering'] ?? 'topSorting') {
-                'sorting' => $this->questionRepository->findAllOrderedBySorting(),
-                'uid' => $this->questionRepository->findAllOrderedByUid(),
-                'alphabetically' => $this->questionRepository->findAllOrderedAlphabetically(),
-                default => $this->questionRepository->findAllOrdered(),
+        $ordering = $settings['ordering'] ?? 'topSorting';
+        $questions = match (true) {
+            $showOnlyTop && $ordering === 'uid' => $this->questionRepository->findAllOrderedTopOnlyByUid(),
+            $showOnlyTop && $ordering === 'alphabetically' => $this->questionRepository->findAllOrderedTopOnlyAlphabetically(),
+            $showOnlyTop => $this->questionRepository->findAllOrderedTopOnly(),
+            $ordering === 'sorting' => $this->questionRepository->findAllOrderedBySorting(),
+            $ordering === 'uid' => $this->questionRepository->findAllOrderedByUid(),
+            $ordering === 'alphabetically' => $this->questionRepository->findAllOrderedAlphabetically(),
+            default => $this->questionRepository->findAllOrdered(),
         };
         $this->view->assign('questions', $questions);
         $this->view->assign('jsonLd', $this->buildJsonLd($questions));
